@@ -2,11 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AverageRating from './AverageRating'
+import Review from './Review'
+import SideBar from './SideBar'
+import SentimentAnalysis from './SentimentAnalysis'
+import WebsiteVisitors from './WebsiteVisitors'
 import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Review />
+      <SideBar />
+        <SentimentAnalysis />
+          <WebsiteVisitors />
+          <AverageRating />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
